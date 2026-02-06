@@ -30,10 +30,7 @@ public class PlagiarismChecker {
                     tabulationTable[i][j] = tabulationTable[i - 1][j - 1] + 1;
                 } else {
                     // If they aren't equal store the max length for future reference
-                    tabulationTable[i][j] = Math.max(
-                            tabulationTable[i - 1][j],
-                            tabulationTable[i][j - 1]
-                    );
+                    tabulationTable[i][j] = Math.max(tabulationTable[i - 1][j], tabulationTable[i][j - 1]);
                 }
             }
         }
